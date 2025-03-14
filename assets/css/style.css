@@ -803,10 +803,7 @@ main{
 
 
     /* end : MAIN PAGE */
-
-
     /* start : PAGE TOP */
-
     .warpper .top_box {
         height: 20.25rem;
     }
@@ -840,11 +837,6 @@ main{
         line-height: 1.5;
         color: #fff;
     }
-
-
-
-
-
     .philosophy_box dl dt {
         font-weight: 500;
         font-size: 1.15rem;
@@ -858,12 +850,6 @@ main{
     .philosophy_box dl dd ul li::before{
         top: 0.7rem;
     }
-
-
-
-
-
-
     .warpper .contents .contents_inner .box.history_list_box{
         padding: 1rem 0 10rem;
     }
@@ -892,21 +878,6 @@ main{
     .history_list_box ul li p.h_tit{
         width: calc(100% - 80px);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     /* end : COMPANY */
     /* start : TEAM */
     .warpper .contents .contents_inner .box.aspiration_box{
@@ -916,17 +887,17 @@ main{
         padding: 0 0 1.25rem;
         letter-spacing: -0.03rem;
         font-weight: 700;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .aspiration_box ul{
         padding:0 0 1.25rem;
     }
     .aspiration_box ul li{
-        padding: 1.25rem 0 1em;
+        padding: 1.25rem 0 0;
         line-height: 1.5;
         letter-spacing: -0.03rem;
         font-weight: 500;
-        font-size: 1.75rem;
+        font-size: 1.15rem;
     }
     .warpper .contents .contents_inner .box.team_box{
         padding: 3rem 0 7rem;
