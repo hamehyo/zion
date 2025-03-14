@@ -7,7 +7,6 @@
 	font-display: swap;
 	src: url('PretendardVariable.woff2') format('woff2-variations');
 }
-
 /* latin-ext */
 @font-face {
     font-family: 'Red Hat Display';
@@ -35,7 +34,7 @@
     src: url("redhatdisplay_ext.woff2") format('woff2');
     unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-  /* latin */
+/* latin */
 @font-face {
     font-family: 'Red Hat Display';
     font-style: normal;
@@ -62,7 +61,7 @@
     src: url("redhatdisplay.woff2") format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-  /* latin-ext */
+/* latin-ext */
 @font-face {
     font-family: 'Red Hat Display';
     font-style: normal;
@@ -80,7 +79,7 @@
     src: url("redhatdisplay.woff2") format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-  /* latin-ext */
+/* latin-ext */
 @font-face {
     font-family: 'Red Hat Display';
     font-style: normal;
@@ -98,8 +97,6 @@
     src: url("redhatdisplay.woff2") format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
-
 
 html, body, h1, h2, h3, h4, h5, h6, div, p, 
 blockquote, pre, code, address, ul, ol, li, 
@@ -121,6 +118,7 @@ html{
 }
 html, body {
     overflow-x:hidden; /* 반응형 */
+    background: #111;
 }
 ul, ol, li {
     list-style:none;
@@ -135,18 +133,9 @@ a {
     text-decoration:none;
     outline:none;
 }
-i, em {font-style: normal;}
-
-
-
-
-
-
-
-
-
-
-
+i, em {
+    font-style: normal;
+}
 .only_pc{
     display: block;
 }
@@ -191,7 +180,6 @@ i, em {font-style: normal;}
     left: 0; 
     width: 100%; 
     border-bottom: 1px;
-    /* background-color:rgba(51,51,51,0.85); */
     box-sizing: border-box;
     z-index: 999;
     transition: all 0.4s;
@@ -272,8 +260,6 @@ i, em {font-style: normal;}
 	transform: translateX(0);
 }
 /* end : HEADER */
-
-
 /* start : MAIN PAGE */
 main{
     overflow: hidden;
@@ -297,7 +283,7 @@ main{
     height: 100vh;
     object-fit: fill;
 }
-/* shadow motion */
+    /* shadow motion */
 .main_title{
     position: relative;
     margin: 0 auto;
@@ -375,11 +361,8 @@ main{
 .main_title span:nth-child(14){
     animation-delay:2.05s;
 }
-/* shadow motion */
-
+    /* shadow motion */
 /* end : MAIN PAGE */
-
-
 /* start : PAGE TOP */
 .warpper .top_box{
     position: relative;
@@ -430,12 +413,6 @@ main{
     background:rgba(0,0,0,0.6);
 }
 /* end : PAGE TOP */
-
-
-
-
-
-
 /* start : COMPANY  */
 .warpper .contents .contents_inner .box.history_tit_box{
     padding: 4rem 0 5rem;
@@ -498,6 +475,23 @@ main{
     letter-spacing: -0.03rem;
     font-size: 1.25rem;
 }
+.philosophy_box dl dd ul li{
+    position: relative;
+    padding-left: 1rem;
+    word-break: keep-all;
+}
+.philosophy_box dl dd ul li::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.85rem;
+    width: 4px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+
 .warpper .contents .contents_inner .box.history_list_box{
     padding: 3rem 0 8rem;
     max-width: 100%;
@@ -537,11 +531,6 @@ main{
     width: calc(100% - 100px);
 }
 /* end : COMPANY  */
-
-
-
-
-
 /* start : TEAM  */
 .warpper .contents .contents_inner .box.aspiration_box{
     padding: 6.25rem 0 2.5rem;
@@ -555,6 +544,7 @@ main{
 }
 .aspiration_box h3{
     padding:0 0 2.5rem;
+    letter-spacing: -0.08rem;
     font-weight: 900;
     font-size: 3.2rem;
     color: #bfbfbf;
@@ -573,7 +563,6 @@ main{
     font-weight: 700;
     color: #fff;
 }
-
 .warpper .contents .contents_inner .box.team_box{
     padding: 4.75rem 0 10rem;
     max-width: 100%;
@@ -652,15 +641,7 @@ main{
     transform: translate(50px, 0);
 }
 /* end : TEAM  */
-
-
-
-
-
-
 /* start : CONTACT */
-
-
 .warpper .contents .contents_inner .box.contact_box{
     padding: 7.5rem 0;
     max-width: 100%;
@@ -674,9 +655,10 @@ main{
     margin: 0 auto;
     padding: 0 1.25rem;
     max-width: 1240px;
+    box-sizing: border-box;
 }
 .contact_box .iframe_outer{
-    padding-right: 1.875rem    ;
+    padding-right: 1.875rem;
     width: 70%;
     box-sizing: border-box;
 }
@@ -716,12 +698,6 @@ main{
 }
 /* end : CONTACT */
 
-
-
-
-
-
-
 @media only screen and (max-width: 1023px) {
 
     .only_pc{
@@ -730,16 +706,13 @@ main{
     .only_mo{
         display: block;
     }
-    
-
-
-
+    /* start : HEADER */
     .header .btn_hamburger{
         position: absolute;
         top: 1.25rem;
         right: 1.25rem;
-        width: 44px;
-        height: 44px;
+        width: 38px;
+        height: 38px;
         text-align: center;
         color: #ecf0f1;
         box-sizing: border-box;
@@ -748,7 +721,7 @@ main{
     .header .btn_hamburger .hamburger .line {
         display: block;
         margin: 8px auto;
-        width: 44px;
+        width: 38px;
         height: 4px;
         background-color: #ecf0f1;
         transition: all 0.3s ease-in-out;
@@ -818,15 +791,10 @@ main{
         letter-spacing: -0.012rem;
         font-size: 1.25rem;
     }
-
-
+    /* end : HEADER */
 
 
     /* start : MAIN PAGE */
-
-
-
-
 
 
 
@@ -843,16 +811,91 @@ main{
         height: 20.25rem;
     }
     .warpper .top_box .top_box_inner h2{
-        padding: 9rem 0 0;
+        padding: 10rem 0 0;
         font-weight: 700;
         font-size: 2.25rem;
+    }
+    /* end : PAGE TOP */
+    /* start : COMPANY */
+    .warpper .contents .contents_inner .box.history_tit_box{
+        padding: 3rem 0 4rem;
+    }
+    .history_tit_box h2 p{
+        font-size: 2.4rem;
+    }
+    .history_tit_box h2 p.top{
+        padding:0;
+    }
+    .history_tit_box h2 p.mid{
+        padding: 0.4rem 0.2rem 0;
+        font-size: 2rem;
+    }
+    .philosophy_box h2 {
+        padding: 0.5rem 0 0;
+        font-weight: 500;
+        font-size: 1.8rem;
+    }
+    .philosophy_box dl {
+        padding: 2rem 0 0;
+        line-height: 1.5;
+        color: #fff;
     }
 
 
 
 
-    /* end : PAGE TOP */
-    /* start : COMPANY */
+
+    .philosophy_box dl dt {
+        font-weight: 500;
+        font-size: 1.15rem;
+    }
+    .philosophy_box dl dd{
+        font-size: 1.1rem;
+    }
+    .philosophy_box dl dd ul li{
+        padding-left: 0.85rem;
+    }
+    .philosophy_box dl dd ul li::before{
+        top: 0.7rem;
+    }
+
+
+
+
+
+
+    .warpper .contents .contents_inner .box.history_list_box{
+        padding: 1rem 0 10rem;
+    }
+    .history_list_box h2{
+        padding: 0 0 2rem;
+        font-weight: 500;
+        font-size: 1.8rem;
+    }
+    .history_list_box ul li{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .history_list_box ul li.first{
+        padding: 0 0 1rem;
+    }
+    .history_list_box ul li.first p{
+        font-size: 1.15rem;
+    }
+    .history_list_box ul li p{
+        font-size: 1.15rem;
+    }
+    .history_list_box ul li p.h_year{
+        min-width: 80px;
+    }
+    .history_list_box ul li p.h_tit{
+        width: calc(100% - 80px);
+    }
+
+
+
+
 
 
 
@@ -866,32 +909,81 @@ main{
 
     /* end : COMPANY */
     /* start : TEAM */
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .warpper .contents .contents_inner .box.aspiration_box{
+        padding: 3rem 0 4rem;
+    }
+    .aspiration_box h3 {
+        padding: 0 0 1.25rem;
+        letter-spacing: -0.03rem;
+        font-weight: 700;
+        font-size: 2rem;
+    }
+    .aspiration_box ul{
+        padding:0 0 1.25rem;
+    }
+    .aspiration_box ul li{
+        padding: 1.25rem 0 1em;
+        line-height: 1.5;
+        letter-spacing: -0.03rem;
+        font-weight: 500;
+        font-size: 1.75rem;
+    }
+    .warpper .contents .contents_inner .box.team_box{
+        padding: 3rem 0 7rem;
+    }
+    .team_box ul li{
+        padding: 1.5rem 0 1rem;
+    }
+    .team_box ul li .member strong{
+        font-size: 1.25rem;
+    }
+    .team_box ul li .member span{
+        font-size: 1rem;
+    }
+    .team_box ul li .word {
+        padding: 1em 0 2.25rem;
+        line-height: 1.6;
+        font-size: 1.1rem;
+    }
+    .contents .line.last{
+        display: none;
+    }
     /* end : TEAM */
     /* start : CONTACT */
-
-
-
-
-
-
-
-
-
-
-
+    .warpper .contents .contents_inner .box.contact_box{
+        padding: 3rem 0 8rem;
+    }
+    .warpper .contents .contents_inner .box.contact_box .contact_box_inner{
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .contact_box .iframe_outer{
+        padding-right: 0;
+        width: 100%;
+    }
+    .contact_box .iframe_outer iframe{
+        width: 100%;
+        height: 320px;
+        border-radius: 1.25rem;
+    }
+    .contact_box .info_list{
+        padding:0;
+        width: 100%;
+    }
+    .contact_box .info_list li{
+        margin: 1rem 0 0;
+        padding: 1rem 0 0;
+    }
+    .contact_box .info_list li span{
+        padding:0 0 0.625rem;
+        font-size: 0.9rem;
+    }
+    .contact_box .info_list li p{
+        line-height: 1.25;
+        font-size: 1.15rem;
+        color: #fff;
+    }
     /* end : CONTACT */
 
 

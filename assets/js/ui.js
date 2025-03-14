@@ -16,7 +16,6 @@ $(function (){
     let preScrollTop = 0;
     window.addEventListener('scroll',() => {
         let nextScrollTop = window.scrollY;
-        console.log(nextScrollTop);
         if(preScrollTop < nextScrollTop) {//console.log('Down');
             $(".header").addClass("down");
         } else { //console.log('Up');
@@ -25,6 +24,7 @@ $(function (){
         }
         if(nextScrollTop === 0){
             $(".header").removeClass("bg");
+            $(".header").removeClass("down");
         }
         preScrollTop = nextScrollTop;
     });
@@ -52,6 +52,17 @@ $(function (){
         });
     }).scroll();
 
+
+    function mo_aos_delay(){
+        if( $(window).width() < 1024){
+            $(".aspiration_box_inner ul li").removeAttr("data-aos-delay"); // team page
+            $(".history_tit_box_inner h2 p").removeAttr("data-aos-delay"); // company page
+        }
+    }
+    mo_aos_delay();
+    $( window ).resize(function() {
+        //mo_aos_delay();
+    }); 
 
 });
 
