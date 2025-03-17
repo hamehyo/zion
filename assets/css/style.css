@@ -260,6 +260,7 @@ i, em {
 	transform: translateX(0);
 }
 /* end : HEADER */
+
 /* start : MAIN PAGE */
 main{
     overflow: hidden;
@@ -283,7 +284,7 @@ main{
     height: 100vh;
     object-fit: fill;
 }
-    /* shadow motion */
+/* shadow motion */
 .main_title{
     position: relative;
     margin: 0 auto;
@@ -364,8 +365,8 @@ main{
 .main_title span:nth-child(14){
     animation-delay:2.05s;
 }
-    /* shadow motion */
 /* end : MAIN PAGE */
+
 /* start : PAGE TOP */
 .warpper .top_box{
     position: relative;
@@ -416,6 +417,7 @@ main{
     background:rgba(0,0,0,0.6);
 }
 /* end : PAGE TOP */
+
 /* start : COMPANY  */
 .warpper .contents .contents_inner .box.history_tit_box{
     padding: 4rem 0 5rem;
@@ -532,6 +534,7 @@ main{
     width: calc(100% - 100px);
 }
 /* end : COMPANY  */
+
 /* start : TEAM  */
 .warpper .contents .contents_inner .box.aspiration_box{
     padding: 6.25rem 0 2.5rem;
@@ -648,6 +651,7 @@ main{
     transform: translate(50px, 0);
 }
 /* end : TEAM  */
+
 /* start : CONTACT */
 .warpper .contents .contents_inner .box.contact_box{
     padding: 7.5rem 0;
@@ -713,6 +717,7 @@ main{
     .only_mo{
         display: block;
     }
+
     /* start : HEADER */
     .header .btn_hamburger{
         position: absolute;
@@ -798,7 +803,6 @@ main{
     }
     /* end : HEADER */
 
-
     /* start : MAIN PAGE */
 
     .main_title{
@@ -806,10 +810,6 @@ main{
         letter-spacing: -0.8rem;
         font-size: 7.3rem;
     }
-    /* .main_title br{
-        display: block;
-    } */
-
     /* end : MAIN PAGE */
 
     /* start : PAGE TOP */
@@ -822,6 +822,7 @@ main{
         font-size: 2.25rem;
     }
     /* end : PAGE TOP */
+
     /* start : COMPANY */
     .warpper .contents .contents_inner .box.history_tit_box{
         padding: 3rem 0 4rem;
@@ -888,6 +889,7 @@ main{
         width: calc(100% - 80px);
     }
     /* end : COMPANY */
+
     /* start : TEAM */
     .warpper .contents .contents_inner .box.aspiration_box{
         padding: 4rem 0;
@@ -933,6 +935,7 @@ main{
         display: none;
     }
     /* end : TEAM */
+
     /* start : CONTACT */
     .warpper .contents .contents_inner .box.contact_box{
         padding: 3rem 0 9rem;
@@ -987,9 +990,6 @@ main{
         display: block;
     }
     /* end : MAIN PAGE */
-
-
-
     /* start : TEAM */
     .warpper .contents .contents_inner .box.aspiration_box {
         padding: 2.8rem 0 4rem;
