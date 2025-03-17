@@ -890,13 +890,13 @@ main{
     /* end : COMPANY */
     /* start : TEAM */
     .warpper .contents .contents_inner .box.aspiration_box{
-        padding: 3rem 0 4rem;
+        padding: 4rem 0;
     }
     .aspiration_box h3 {
         padding: 0 0 1.25rem;
-        letter-spacing: -0.03rem;
+        letter-spacing: -0.06rem;
         font-weight: 700;
-        font-size: 1.5rem;
+        font-size: 2.2rem;
     }
     .aspiration_box ul{
         padding:0 0 1.25rem;
@@ -906,11 +906,11 @@ main{
         line-height: 1.5;
         letter-spacing: -0.03rem;
         font-weight: 500;
-        font-size: 1.15rem;
+        font-size: 1.8rem;
         word-break: keep-all;
     }
     .aspiration_box ul li span{
-        width: 3.4rem;
+        width: 5rem;
     }
     .warpper .contents .contents_inner .box.team_box{
         padding: 3rem 0 9rem;
@@ -970,10 +970,7 @@ main{
     }
     /* end : CONTACT */
 
-
 }
-
-
 
 
 @media only screen and (max-width: 767px) {
@@ -989,8 +986,35 @@ main{
     .main_title br{
         display: block;
     }
-
     /* end : MAIN PAGE */
+
+
+
+    /* start : TEAM */
+    .warpper .contents .contents_inner .box.aspiration_box {
+        padding: 2.8rem 0 4rem;
+    }
+    .aspiration_box h3 {
+        font-size: 2rem;
+    }
+    .aspiration_box ul li{
+        flex-direction: column;
+        font-size: 1.25rem;
+    }
+    .aspiration_box ul li span{
+        width: 100%;
+    }
+    .aspiration_box ul li strong{
+        width: 100%;
+    }
+    /* end : TEAM */
+
+
+
+
+
+
+
 
 
 }
