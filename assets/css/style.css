@@ -289,7 +289,7 @@ main{
     position: relative;
     margin: 0 auto;
     right: 3%;
-    bottom: 40%;
+    bottom: 45%;
     max-width: 1280px;
     width: 100%;
     text-align: right;
@@ -301,6 +301,13 @@ main{
     color: transparent;
     text-transform: uppercase;
     z-index: 9;
+}
+.main_title .top{
+    letter-spacing: -1.2rem;
+    font-size: 9.2rem;
+}
+.main_title .btm{
+    margin-top: -1rem;
 }
 .main_title br{
     display: none;
@@ -810,6 +817,13 @@ main{
         letter-spacing: -0.8rem;
         font-size: 7.3rem;
     }
+    .main_title .top{
+        letter-spacing: -1rem;
+        font-size: 8.2rem;
+    }
+    .main_title .btm{
+        margin-top: -1rem;
+    }
     /* end : MAIN PAGE */
 
     /* start : PAGE TOP */
@@ -979,15 +993,28 @@ main{
 @media only screen and (max-width: 767px) {
 
     /* start : MAIN PAGE */
+    .vd_outer{
+        height: 100vh;
+    }
     .main_title{
         right: 0;
-        bottom: 50%;
+        bottom: 60%;
         text-align: center;
         letter-spacing: -0.5rem;
         font-size: 4.5rem;
     }
     .main_title br{
         display: block;
+    }
+    .main_title .top{
+        letter-spacing: -0.7rem;
+        font-size: 7rem;
+    }
+    .main_title .btm{
+        margin-top: -1rem;
+    }
+    .main_title span{
+        animation: main_title 1.5s ease-in-out infinite alternate;
     }
     /* end : MAIN PAGE */
     /* start : TEAM */
