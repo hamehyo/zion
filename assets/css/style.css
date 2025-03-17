@@ -287,7 +287,7 @@ main{
 .main_title{
     position: relative;
     margin: 0 auto;
-    right: 2%;
+    right: 3%;
     bottom: 40%;
     max-width: 1280px;
     width: 100%;
@@ -296,10 +296,13 @@ main{
     letter-spacing: -0.7rem;
     font-weight: 900;
     font-family: "Red Hat Display", sans-serif;
-    font-size: 8em;
+    font-size: 8rem;
     color: transparent;
     text-transform: uppercase;
     z-index: 9;
+}
+.main_title br{
+    display: none;
 }
 .main_title span{
     text-shadow:
@@ -490,8 +493,6 @@ main{
     background-color: #fff;
     border-radius: 50%;
 }
-
-
 .warpper .contents .contents_inner .box.history_list_box{
     padding: 3rem 0 8rem;
     max-width: 100%;
@@ -553,12 +554,18 @@ main{
     padding: 1.25rem 0 2.5rem;
 }
 .aspiration_box ul li{
+    display: flex;
+    align-items: flex-start;
     padding: 2rem 0 1.2rem;
     letter-spacing: -0.08rem;
     font-weight: 700;
     font-size: 2.8rem;
     color: #d7d7d7;
 }
+.aspiration_box ul li span{
+    width: 8rem;
+}
+
 .aspiration_box ul li strong{
     font-weight: 700;
     color: #fff;
@@ -711,8 +718,8 @@ main{
         position: absolute;
         top: 1.25rem;
         right: 1.25rem;
-        width: 38px;
-        height: 38px;
+        width: 30px;
+        height: 30px;
         text-align: center;
         color: #ecf0f1;
         box-sizing: border-box;
@@ -720,8 +727,8 @@ main{
     }
     .header .btn_hamburger .hamburger .line {
         display: block;
-        margin: 8px auto;
-        width: 38px;
+        margin: 5px auto;
+        width: 30px;
         height: 4px;
         background-color: #ecf0f1;
         transition: all 0.3s ease-in-out;
@@ -739,10 +746,10 @@ main{
         transition-delay: 0.3s;
     }
     .header .btn_hamburger .hamburger.is-active .line:nth-child(1){
-        transform: translateY(12px);
+        transform: translateY(9px);
     }
     .header .btn_hamburger .hamburger.is-active .line:nth-child(3){
-        transform: translateY(-12px) rotate(90deg);
+        transform: translateY(-9px) rotate(90deg);
     }
     .nav_side{
         position: fixed;
@@ -769,7 +776,6 @@ main{
         left: 50%;
         top: 50%;
         transform: translate(-50%,-50%);
-
     }
     .nav_side .nav_side_inner ul li{
         padding: 0 0 1rem;
@@ -781,12 +787,11 @@ main{
         font-size: 2rem;
         color: #fff;
     }
-
     .header .header_inner{
         padding: 0;
     }
     .header .logo a{
-        margin: 0.6rem 0 0;
+        margin: 0.3rem 0 0;
         padding: 1.25rem;
         letter-spacing: -0.012rem;
         font-size: 1.25rem;
@@ -796,13 +801,17 @@ main{
 
     /* start : MAIN PAGE */
 
-
-
-
-
-
+    .main_title{
+        right: 4%;
+        letter-spacing: -0.8rem;
+        font-size: 7.3rem;
+    }
+    /* .main_title br{
+        display: block;
+    } */
 
     /* end : MAIN PAGE */
+
     /* start : PAGE TOP */
     .warpper .top_box {
         height: 20.25rem;
@@ -851,7 +860,7 @@ main{
         top: 0.7rem;
     }
     .warpper .contents .contents_inner .box.history_list_box{
-        padding: 1rem 0 10rem;
+        padding: 0 0 12rem;
     }
     .history_list_box h2{
         padding: 0 0 2rem;
@@ -898,9 +907,13 @@ main{
         letter-spacing: -0.03rem;
         font-weight: 500;
         font-size: 1.15rem;
+        word-break: keep-all;
+    }
+    .aspiration_box ul li span{
+        width: 3.4rem;
     }
     .warpper .contents .contents_inner .box.team_box{
-        padding: 3rem 0 7rem;
+        padding: 3rem 0 9rem;
     }
     .team_box ul li{
         padding: 1.5rem 0 1rem;
@@ -922,7 +935,7 @@ main{
     /* end : TEAM */
     /* start : CONTACT */
     .warpper .contents .contents_inner .box.contact_box{
-        padding: 3rem 0 8rem;
+        padding: 3rem 0 9rem;
     }
     .warpper .contents .contents_inner .box.contact_box .contact_box_inner{
         align-items: flex-start;
@@ -958,25 +971,29 @@ main{
     /* end : CONTACT */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
+
+
+@media only screen and (max-width: 767px) {
+
+    /* start : MAIN PAGE */
+    .main_title{
+        right: 0;
+        bottom: 50%;
+        text-align: center;
+        letter-spacing: -0.5rem;
+        font-size: 4.5rem;
+    }
+    .main_title br{
+        display: block;
+    }
+
+    /* end : MAIN PAGE */
+
+
+}
 
 
 
