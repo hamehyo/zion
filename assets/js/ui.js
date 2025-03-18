@@ -66,10 +66,10 @@ $(function (){
         document.documentElement.style.setProperty('--vh', `${vh}px`);
         console.log(vh);
     }
-    //setScreenSize();
+    setScreenSize();
 
     $(window).resize(function() {
-        //setScreenSize();
+        setScreenSize();
     }); 
 
 });
