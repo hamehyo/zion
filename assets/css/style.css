@@ -589,25 +589,8 @@ main{
 .warpper .contents .contents_inner .box.team_box{
     padding: 4rem 0 10rem;
     max-width: 100%;
-    background-color: #000;
-    /* 
-    background: linear-gradient(-135deg,#111111,#212121,#0c0c0c,#000000 ); 
-    background-size: 400% 400%;
-    animation: bg_motion 12s infinite ease-in-out;
-    */
+    background-color: #111;
 }
-/*
-@keyframes bg_motion {
-    0% {
-        background-position: 0 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0 50%;
-    }
-}*/
 .warpper .contents .contents_inner .box.team_box .team_box_inner{
     overflow: hidden;
     margin: 0 auto;
@@ -666,6 +649,9 @@ main{
 }
 .scroll_on.type_right {
     transform: translate(50px, 0);
+}
+.contents .line.last{
+    display: none;
 }
 /* end : TEAM  */
 
@@ -930,7 +916,6 @@ main{
         font-size: 1rem;
         word-break: keep-all;
     }
-
     .warpper .contents .contents_inner .box.team_box{
         padding: 3rem 0 9rem;
     }
@@ -947,9 +932,6 @@ main{
         padding: 1em 0 2.25rem;
         line-height: 1.6;
         font-size: 1.05rem;
-    }
-    .contents .line.last{
-        display: none;
     }
     /* end : TEAM */
 
