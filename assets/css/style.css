@@ -285,6 +285,16 @@ main{
     height: 100%;
     object-fit: fill;
 }
+.copy_txt{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 7;
+}
+.copy_txt a{
+    font-size: 10px;
+    color: #000;
+}
 /* shadow motion */
 .main_title{
     position: relative;
@@ -812,7 +822,6 @@ main{
     /* end : HEADER */
 
     /* start : MAIN PAGE */
-
     .main_title{
         right: 4%;
         letter-spacing: -0.8rem;
@@ -1000,7 +1009,7 @@ main{
     }    
     .main_title{
         right: 0;
-        bottom: 58%;
+        bottom: 62%;
         text-align: center;
         letter-spacing: -0.5rem;
         font-size: 4.5rem;
