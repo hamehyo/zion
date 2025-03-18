@@ -118,7 +118,7 @@ html{
 }
 html, body {
     overflow-x:hidden; /* 반응형 */
-    background: #111;
+    background: #000;
 }
 ul, ol, li {
     list-style:none;
@@ -433,7 +433,7 @@ main{
 .warpper .contents .contents_inner .box.history_tit_box{
     padding: 6rem 0 5rem;
     max-width: 100%;
-    background-color: #111;
+    background-color: #000;
 }
 .warpper .contents .contents_inner .box.history_tit_box .history_tit_box_inner{
     margin: 0 auto;
@@ -460,10 +460,46 @@ main{
 .history_tit_box h2 p.btm{
     color: #fff;
 }
+.warpper .contents .contents_inner .box.aspiration_box{
+    position: relative;
+    padding: 2rem 0 4rem;
+    background-color:#000;
+}
+.warpper .contents .contents_inner .box.aspiration_box::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.6);
+}
+.warpper .contents .contents_inner .box.aspiration_box .aspiration_box_inner{
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    max-width: 1240px;
+    text-align: right;
+}
+.aspiration_box ul{
+    position: relative;
+    padding: 0;
+    z-index: 9;
+}
+.aspiration_box ul li{
+    padding: 0 0 0.5rem;
+    letter-spacing: -0.06rem;
+    font-weight: 400;
+    font-size: 1.15rem;
+    color: #d7d7d7;
+}
+.aspiration_box ul li strong{
+    font-weight: 500;
+    color: #fff;
+}
 .warpper .contents .contents_inner .box.philosophy_box{
-    padding: 3rem 0;
+    padding: 5rem 0 3rem;
     max-width: 100%;
-    background-color: #111;
+    background-color: #000;
 }
 .warpper .contents .contents_inner .box.philosophy_box .philosophy_box_inner{
     margin: 0 auto;
@@ -509,7 +545,7 @@ main{
 .warpper .contents .contents_inner .box.history_list_box{
     padding: 3rem 0 8rem;
     max-width: 100%;
-    background-color: #111;
+    background-color: #000;
 }
 .warpper .contents .contents_inner .box.history_list_box .history_list_box_inner{
     margin: 0 auto;
@@ -547,49 +583,10 @@ main{
 /* end : COMPANY  */
 
 /* start : TEAM  */
-.warpper .contents .contents_inner .box.aspiration_box{
-    position: relative;
-    padding: 12rem 0 4rem;
-    max-width: 100%;
-    background: url("../imgs/bg_team02.jpg") no-repeat bottom center/cover;
-}
-.warpper .contents .contents_inner .box.aspiration_box::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background:rgba(0,0,0,0.6);
-}
-.warpper .contents .contents_inner .box.aspiration_box .aspiration_box_inner{
-    margin: 0 auto;
-    padding: 0 1.25rem;
-    max-width: 1240px;
-}
-.aspiration_box ul{
-    position: relative;
-    margin-bottom: -2.5rem;
-    padding: 0;
-    z-index: 9;
-}
-.aspiration_box ul li{
-    /* display: flex;
-    align-items: flex-start; */
-    padding: 0 0 0.5rem;
-    letter-spacing: -0.06rem;
-    font-weight: 400;
-    font-size: 1.15rem;
-    color: #d7d7d7;
-}
-.aspiration_box ul li strong{
-    font-weight: 500;
-    color: #fff;
-}
 .warpper .contents .contents_inner .box.team_box{
     padding: 4rem 0 10rem;
     max-width: 100%;
-    background-color: #111;
+    background-color: #000;
 }
 .warpper .contents .contents_inner .box.team_box .team_box_inner{
     overflow: hidden;
@@ -632,7 +629,7 @@ main{
 }
 .scroll_on {
     opacity: 0;
-    transition: all 1s;
+    transition: all 1.2s;
 }
 .scroll_on.active {
     opacity: 1 !important;
@@ -765,7 +762,7 @@ main{
         top: 0;
         width: 100%;
         height: 100%;
-        background-color: #111;
+        background-color: #000;
         z-index: 99;
         transition: right 0.4s;
     }
@@ -846,6 +843,19 @@ main{
         padding: 0.4rem 0.2rem 0;
         font-size: 2rem;
     }
+    .warpper .contents .contents_inner .box.aspiration_box{
+        padding: 4rem 0 3rem;
+    }
+    .aspiration_box ul{
+        padding:0;
+    }
+    .aspiration_box ul li{
+        padding: 0.4rem 0 0;
+        line-height: 1.5;
+        letter-spacing: -0.03rem;
+        font-size: 1rem;
+        word-break: keep-all;
+    }
     .warpper .contents .contents_inner .box.philosophy_box{
         padding: 1.5rem 0 3rem;
     }
@@ -903,19 +913,6 @@ main{
     /* end : COMPANY */
 
     /* start : TEAM */
-    .warpper .contents .contents_inner .box.aspiration_box{
-        padding: 6rem 0 3rem;
-    }
-    .aspiration_box ul{
-        padding:0;
-    }
-    .aspiration_box ul li{
-        padding: 0.4rem 0 0;
-        line-height: 1.5;
-        letter-spacing: -0.03rem;
-        font-size: 1rem;
-        word-break: keep-all;
-    }
     .warpper .contents .contents_inner .box.team_box{
         padding: 3rem 0 9rem;
     }
@@ -993,7 +990,7 @@ main{
         animation: main_title 1.5s ease-in-out infinite alternate;
     }
     /* end : MAIN PAGE */
-    /* start : TEAM */
+    /* start : COMPANY */
     .warpper .contents .contents_inner .box.aspiration_box {
         padding: 5rem 0;
     }
@@ -1007,7 +1004,7 @@ main{
     .aspiration_box ul li strong{
         font-weight: 400;
     }
-    /* end : TEAM */
+    /* end : COMPANY */
 
 
 }
