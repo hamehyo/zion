@@ -431,7 +431,7 @@ main{
 
 /* start : COMPANY  */
 .warpper .contents .contents_inner .box.history_tit_box{
-    padding: 6rem 0 5rem;
+    padding: 6rem 0 2.5rem;
     max-width: 100%;
     background-color: #000;
 }
@@ -584,7 +584,7 @@ main{
 
 /* start : TEAM  */
 .warpper .contents .contents_inner .box.team_box{
-    padding: 4rem 0 10rem;
+    padding: 6rem 0 10rem;
     max-width: 100%;
     background-color: #000;
 }
@@ -844,16 +844,16 @@ main{
         font-size: 2rem;
     }
     .warpper .contents .contents_inner .box.aspiration_box{
-        padding: 4rem 0 3rem;
+        padding: 1rem 0 3rem;
     }
     .aspiration_box ul{
         padding:0;
     }
     .aspiration_box ul li{
-        padding: 0.4rem 0 0;
+        padding: 0.2rem 0 0;
         line-height: 1.5;
         letter-spacing: -0.03rem;
-        font-size: 1rem;
+        font-size: 0.9rem;
         word-break: keep-all;
     }
     .warpper .contents .contents_inner .box.philosophy_box{
@@ -992,17 +992,32 @@ main{
     /* end : MAIN PAGE */
     /* start : COMPANY */
     .warpper .contents .contents_inner .box.aspiration_box {
-        padding: 5rem 0;
+        padding: 1rem 0 3rem;
     }
     .aspiration_box ul{
         margin-bottom: 0;
     }
     .aspiration_box ul li{
         padding: 0;
-        font-size: 0.9rem;
+        font-size: 0.95rem;
     }
     .aspiration_box ul li strong{
         font-weight: 400;
+    }
+    .philosophy_box h2{
+        font-size: 1.4rem;
+    }
+    .philosophy_box dl dd ul li {
+        padding-left: 0.7rem;
+    }
+    .philosophy_box dl dd ul li::before {
+        top: 0.65rem;
+    }
+    .philosophy_box dl{
+        padding: 1.5rem 0 0;
+    }
+    .philosophy_box dl dd {
+        font-size: 1rem;
     }
     /* end : COMPANY */
 
