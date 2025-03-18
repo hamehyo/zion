@@ -995,7 +995,7 @@ main{
 
     /* start : MAIN PAGE */
     .main{
-        height:calc(var(--vh, 1vh) * 100);
+        height: 100vh;
     }    
     .main_title{
         right: 0;
