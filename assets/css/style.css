@@ -269,7 +269,7 @@ main{
 }
 .vd_outer{
     position: relative;
-    height: 100vh;
+    height: 100%;
 }
 .vd_outer::after{
     content: "";
@@ -994,12 +994,9 @@ main{
 @media only screen and (max-width: 767px) {
 
     /* start : MAIN PAGE */
-    .vd_outer{
-        height: 100dvh;
+    .main{
+        height:calc(var(--vh, 1vh) * 100);
     }    
-    .vd_outer video{
-        height: 100dvh;
-    }
     .main_title{
         right: 0;
         bottom: 56%;
