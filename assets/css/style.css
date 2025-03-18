@@ -1002,7 +1002,6 @@ main{
     }    
     .main_title{
         letter-spacing: -0.38rem;
-        font-weight: 700;
         font-size: 3rem;
     }
     .main_title br{
