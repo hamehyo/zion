@@ -993,8 +993,8 @@ main{
 @media only screen and (max-width: 767px) {
 
     /* start : MAIN PAGE */
-    .vd_outer{
-        height: 100vh;
+    .vd_outer video{
+        height: 100dvh;
     }
     .main_title{
         right: 0;
