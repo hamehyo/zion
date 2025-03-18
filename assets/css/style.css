@@ -292,33 +292,26 @@ main{
     z-index: 7;
 }
 .copy_txt a{
-    font-size: 10px;
+    font-size: 0.5rem;
     color: #000;
 }
 /* shadow motion */
 .main_title{
-    position: relative;
-    margin: 0 auto;
-    right: 3%;
-    bottom: 45%;
+    position: absolute;
+    left: 50%;
+    top: 54%;
+    transform: translate(-50%,-50%);
     max-width: 1280px;
     width: 100%;
-    text-align: right;
+    text-align: center;
     line-height: 1;
-    letter-spacing: -0.7rem;
+    letter-spacing: -0.95rem;
     font-weight: 900;
     font-family: "Red Hat Display", sans-serif;
-    font-size: 8rem;
+    font-size: 8.5rem;
     color: transparent;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     z-index: 9;
-}
-.main_title .top{
-    letter-spacing: -1.2rem;
-    font-size: 9.2rem;
-}
-.main_title .btm{
-    margin-top: -1rem;
 }
 .main_title br{
     display: none;
@@ -420,16 +413,16 @@ main{
     z-index: 9;
 }
 .warpper .top_box.company{
-    background:url("../imgs/bg_001.jpg") no-repeat 50%/cover;
+    background:url("../imgs/bg_compay.jpg") no-repeat 50%/cover;
 }
 .warpper .top_box.company::before{
     background:rgba(0,0,0,0.6);
 }
 .warpper .top_box.team{
-    background:url("../imgs/bg_002.jpg") no-repeat 50%/cover;
+    background:url("../imgs/bg_team01.jpg") no-repeat 50%/cover;
 }
 .warpper .top_box.contact{
-    background:url("../imgs/bg_004.jpg") no-repeat 50% 55%/cover;
+    background:url("../imgs/bg_contact.jpg") no-repeat 50% 55%/cover;
 }
 .warpper .top_box.contact::before{
     background:rgba(0,0,0,0.6);
@@ -438,7 +431,7 @@ main{
 
 /* start : COMPANY  */
 .warpper .contents .contents_inner .box.history_tit_box{
-    padding: 4rem 0 5rem;
+    padding: 6rem 0 5rem;
     max-width: 100%;
     background-color: #111;
 }
@@ -470,7 +463,7 @@ main{
 .warpper .contents .contents_inner .box.philosophy_box{
     padding: 3rem 0;
     max-width: 100%;
-    background-color: #191919;
+    background-color: #111;
 }
 .warpper .contents .contents_inner .box.philosophy_box .philosophy_box_inner{
     margin: 0 auto;
@@ -516,7 +509,7 @@ main{
 .warpper .contents .contents_inner .box.history_list_box{
     padding: 3rem 0 8rem;
     max-width: 100%;
-    background-color: #191919;
+    background-color: #111;
 }
 .warpper .contents .contents_inner .box.history_list_box .history_list_box_inner{
     margin: 0 auto;
@@ -555,49 +548,55 @@ main{
 
 /* start : TEAM  */
 .warpper .contents .contents_inner .box.aspiration_box{
-    padding: 6.25rem 0 2.5rem;
+    position: relative;
+    padding: 12rem 0 4rem;
     max-width: 100%;
-    background-color: #111;
+    background: url("../imgs/bg_team02.jpg") no-repeat bottom center/cover;
+}
+.warpper .contents .contents_inner .box.aspiration_box::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.6);
 }
 .warpper .contents .contents_inner .box.aspiration_box .aspiration_box_inner{
     margin: 0 auto;
     padding: 0 1.25rem;
     max-width: 1240px;
 }
-.aspiration_box h3{
-    padding:0 0 2.5rem;
-    letter-spacing: -0.08rem;
-    font-weight: 900;
-    font-size: 3.2rem;
-    color: #bfbfbf;
-}
 .aspiration_box ul{
-    padding: 1.25rem 0 2.5rem;
+    position: relative;
+    margin-bottom: -2.5rem;
+    padding: 0;
+    z-index: 9;
 }
 .aspiration_box ul li{
-    display: flex;
-    align-items: flex-start;
-    padding: 2rem 0 1.2rem;
-    letter-spacing: -0.08rem;
-    font-weight: 700;
-    font-size: 2.8rem;
+    /* display: flex;
+    align-items: flex-start; */
+    padding: 0 0 0.5rem;
+    letter-spacing: -0.06rem;
+    font-weight: 400;
+    font-size: 1.15rem;
     color: #d7d7d7;
 }
-.aspiration_box ul li span{
-    width: 8rem;
-}
-
 .aspiration_box ul li strong{
-    font-weight: 700;
+    font-weight: 500;
     color: #fff;
 }
 .warpper .contents .contents_inner .box.team_box{
-    padding: 4.75rem 0 10rem;
+    padding: 4rem 0 10rem;
     max-width: 100%;
-    background: linear-gradient(-135deg,#111111,#212121,#0c0c0c,#000000 );
+    background-color: #000;
+    /* 
+    background: linear-gradient(-135deg,#111111,#212121,#0c0c0c,#000000 ); 
     background-size: 400% 400%;
     animation: bg_motion 12s infinite ease-in-out;
+    */
 }
+/*
 @keyframes bg_motion {
     0% {
         background-position: 0 50%;
@@ -608,7 +607,7 @@ main{
     100% {
         background-position: 0 50%;
     }
-}
+}*/
 .warpper .contents .contents_inner .box.team_box .team_box_inner{
     overflow: hidden;
     margin: 0 auto;
@@ -849,10 +848,10 @@ main{
 
     /* start : COMPANY */
     .warpper .contents .contents_inner .box.history_tit_box{
-        padding: 3rem 0 4rem;
+        padding: 3rem 0 2rem;
     }
     .history_tit_box h2 p{
-        font-size: 2.4rem;
+        font-size: 2.1rem;
     }
     .history_tit_box h2 p.top{
         padding:0;
@@ -861,10 +860,13 @@ main{
         padding: 0.4rem 0.2rem 0;
         font-size: 2rem;
     }
+    .warpper .contents .contents_inner .box.philosophy_box{
+        padding: 1.5rem 0 3rem;
+    }
     .philosophy_box h2 {
         padding: 0.5rem 0 0;
         font-weight: 500;
-        font-size: 1.8rem;
+        font-size: 1.75rem;
     }
     .philosophy_box dl {
         padding: 2rem 0 0;
@@ -885,7 +887,7 @@ main{
         top: 0.7rem;
     }
     .warpper .contents .contents_inner .box.history_list_box{
-        padding: 0 0 12rem;
+        padding: 0 0 8rem;
     }
     .history_list_box h2{
         padding: 0 0 2rem;
@@ -916,28 +918,19 @@ main{
 
     /* start : TEAM */
     .warpper .contents .contents_inner .box.aspiration_box{
-        padding: 4rem 0;
-    }
-    .aspiration_box h3 {
-        padding: 0 0 1.25rem;
-        letter-spacing: -0.06rem;
-        font-weight: 700;
-        font-size: 2.2rem;
+        padding: 6rem 0 3rem;
     }
     .aspiration_box ul{
-        padding:0 0 1.25rem;
+        padding:0;
     }
     .aspiration_box ul li{
-        padding: 1.25rem 0 0;
+        padding: 0.4rem 0 0;
         line-height: 1.5;
         letter-spacing: -0.03rem;
-        font-weight: 500;
-        font-size: 1.8rem;
+        font-size: 1rem;
         word-break: keep-all;
     }
-    .aspiration_box ul li span{
-        width: 5rem;
-    }
+
     .warpper .contents .contents_inner .box.team_box{
         padding: 3rem 0 9rem;
     }
@@ -953,7 +946,7 @@ main{
     .team_box ul li .word {
         padding: 1em 0 2.25rem;
         line-height: 1.6;
-        font-size: 1.1rem;
+        font-size: 1.05rem;
     }
     .contents .line.last{
         display: none;
@@ -1008,22 +1001,12 @@ main{
         height:calc(var(--vh, 1vh) * 100);
     }    
     .main_title{
-        right: 0;
-        bottom: 62%;
-        text-align: center;
-        letter-spacing: -0.5rem;
-        font-size: 4.5rem;
+        letter-spacing: -0.38rem;
+        font-weight: 700;
+        font-size: 3rem;
     }
     .main_title br{
         display: block;
-    }
-    .main_title .top{
-        letter-spacing: -0.6rem;
-        font-size: 5.5rem;
-    }
-    .main_title .btm{
-        margin-top: -0.7rem;
-        line-height: 0.8;
     }
     .main_title span{
         animation: main_title 1.5s ease-in-out infinite alternate;
@@ -1031,29 +1014,19 @@ main{
     /* end : MAIN PAGE */
     /* start : TEAM */
     .warpper .contents .contents_inner .box.aspiration_box {
-        padding: 2.8rem 0 4rem;
+        padding: 5rem 0;
     }
-    .aspiration_box h3 {
-        font-size: 2rem;
+    .aspiration_box ul{
+        margin-bottom: 0;
     }
     .aspiration_box ul li{
-        flex-direction: column;
-        font-size: 1.25rem;
-    }
-    .aspiration_box ul li span{
-        width: 100%;
+        padding: 0;
+        font-size: 0.9rem;
     }
     .aspiration_box ul li strong{
-        width: 100%;
+        font-weight: 400;
     }
     /* end : TEAM */
-
-
-
-
-
-
-
 
 
 }
