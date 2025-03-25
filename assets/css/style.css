@@ -707,11 +707,12 @@ main{
     font-size: 1.25rem;
     color: #fff;
 }
+/*
 .contact_box .info_list li .mail a{
     text-decoration: underline;
     color: #fff;
 }
-
+*/
 /* end : CONTACT */
 
 @media only screen and (max-width: 1023px) {
